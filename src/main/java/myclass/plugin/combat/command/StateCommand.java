@@ -56,6 +56,9 @@ public class StateCommand implements CommandExecutor {
                 // Aquí deberías tener lógica para obtener el estado del jugador
                 target.sendMessage("El estado de " + target.getName() + " es " + StateManager.getPlayerState(player));
                 break;
+            case "clear":
+                StateManager.removePlayerState(target);
+                player.sendMessage("Tu estado fue removido ");
             default:
                 player.sendMessage("Uso correcto: /state <set/get> <nick>");
                 break;

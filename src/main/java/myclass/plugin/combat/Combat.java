@@ -16,20 +16,6 @@ public final class Combat extends JavaPlugin {
 
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "Combat encendido con exito");
 
-        API.getInstance().getLang().save();
-
-        getServer().getScheduler().runTaskTimerAsynchronously(this, () -> {
-            for (Player player : getServer().getOnlinePlayers()) {
-                String state = StateManager.getPlayerState(player);
-                if (state.equals(StateManager.STATE_LOBBY)) {
-                    ScoreboardManager.updateLobby(player);
-                } else if (state.equals(StateManager.STATE_ARENA)) {
-                    ScoreboardManager.updateArena(player);
-                }
-
-            }
-        }, 0, 20);
-
     }
 
     @Override

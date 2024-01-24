@@ -1,9 +1,12 @@
 package myclass.plugin.combat.manager.Scoreboard;
 
+import com.viaversion.viaversion.api.Via;
+import com.viaversion.viaversion.api.protocol.version.ProtocolVersion;
 import fr.mrmicky.fastboard.FastBoard;
 import me.clip.placeholderapi.PlaceholderAPI;
 import myclass.plugin.combat.API;
 import myclass.plugin.combat.utils.Color;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 import java.util.HashMap;
@@ -16,7 +19,13 @@ public class ScoreboardManager {
     private static final Map<UUID, FastBoard> boards = new HashMap<>();
 
     public static void createStatic(Player player) {
-        FastBoard board = new FastBoard(player);
+        FastBoard board = new FastBoard(Bukkit.getPlayer(player.getUniqueId())) {
+
+            @Override
+            public boolean hasLinesMaxLength() {
+                return Via.getAPI().getPlayerVersion(getPlayer()) < ProtocolVersion.v1_13.getVersion();
+            }
+        };
 
         String staticTitle = API.getInstance().getLang().getString("SCOREBOARD.LOADING.TITLE", true);
         List<String> staticLines = Color.set(API.getInstance().getLang().getStringList("SCOREBOARD.LOADING.LINES"));
