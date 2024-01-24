@@ -1,0 +1,30 @@
+SCOREBOARD:
+  LOADING:
+    TITLE: "&c&lLoading..."
+    LINES:
+      - "&r"
+      - "&fThe scoreboard is"
+      - "&fbeing generated."
+      - "&r"
+  LOBBY:
+    TITLE: "&c&lCombat &7(lobby)"
+    LINES:
+      - "&r"
+      - "&7• &fNick: &7%player_name%"
+      - "&7• &fRank: &7%luckperms_prefix%"
+      - "&r"
+      - "&7• &fMoney: &e%vault_eco_balance%"
+      - "&r"
+      - "&c&o class"
+  ARENA:
+    TITLE: "&c&lCombat &7(arena)"
+    LINES:
+      - "&r"
+      - "&7• &fNick: &7%player_name%"
+      - "&r"
+      - "&7• &fKills: &70"
+      - "&7• &fDeaths: &70"
+      - "&r"
+      - "&7• &fKillStreak: &70"
+      - "&r"
+      - "&c&omyclass.plugin.space"

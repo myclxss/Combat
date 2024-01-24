@@ -1,0 +1,11 @@
+dev\myclxss\components\Items.class
+myclass\plugin\combat\command\CombatCommand.class
+myclass\plugin\combat\manager\States\StateManager.class
+myclass\plugin\combat\manager\Scoreboard\ScoreboardManager.class
+myclass\plugin\combat\utils\TitleAPI.class
+myclass\plugin\combat\Combat.class
+myclass\plugin\combat\utils\Color.class
+myclass\plugin\combat\command\StateCommand.class
+myclass\plugin\combat\utils\Files.class
+myclass\plugin\combat\listener\UserListener.class
+myclass\plugin\combat\API.class
