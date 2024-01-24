@@ -1,9 +1,0 @@
-name: Combat
-version: '1.0-SNAPSHOT'
-main: myclass.plugin.combat.Combat
-
-commands:
-  combat:
-    description: main command
-  state:
-    description: state command
