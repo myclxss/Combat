@@ -3,6 +3,7 @@ package myclass.plugin.combat;
 import myclass.plugin.combat.command.CombatCommand;
 import myclass.plugin.combat.command.StateCommand;
 import myclass.plugin.combat.listener.UserListener;
+import myclass.plugin.combat.manager.Database.DatabaseConection;
 import myclass.plugin.combat.manager.Scoreboard.ScoreboardManager;
 import myclass.plugin.combat.manager.States.StateManager;
 import myclass.plugin.combat.utils.Files;
@@ -17,6 +18,8 @@ public class API {
     private final Files lang;
     private final Files settings;
 
+    private DatabaseConection databaseConection;
+
     public API(final Combat plugin) {
 
         instance = this;
@@ -25,10 +28,16 @@ public class API {
         lang = new Files(plugin, "lang");
         settings = new Files(plugin, "settings");
 
+        databaseConection = new DatabaseConection();
+        databaseConection.conectDB();
+
         loadCommand();
         loadListener();
         loadScoreboardTask();
+    }
 
+    public void close(){
+        databaseConection.closeDB();
     }
 
     public void loadCommand() {
@@ -45,7 +54,7 @@ public class API {
 
     }
 
-    public void loadScoreboardTask(){
+    public void loadScoreboardTask() {
         this.getMain().getServer().getScheduler().runTaskTimerAsynchronously(this.getMain(), () -> {
             for (Player player : this.getMain().getServer().getOnlinePlayers()) {
                 String state = StateManager.getPlayerState(player);
@@ -63,7 +72,7 @@ public class API {
         return lang;
     }
 
-    public Files getSettings(){
+    public Files getSettings() {
         return settings;
     }
 
@@ -75,4 +84,7 @@ public class API {
         return instance;
     }
 
+    public DatabaseConection getDatabaseConection() {
+        return databaseConection;
+    }
 }

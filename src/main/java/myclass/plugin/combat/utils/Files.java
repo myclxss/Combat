@@ -25,7 +25,7 @@ public class Files extends YamlConfiguration {
         try {
             load(folderName, fileName);
         } catch (IOException | InvalidConfigurationException exception) {
-            plugin.getLogger().log(Level.WARNING, "A problem has occurred, the file " + file.getName() + " not create. Notify the developer Gonter", exception);
+            plugin.getLogger().log(Level.WARNING, "A problem has occurred, the file " + file.getName() + " not create. Notify the developer", exception);
         }
     }
 
@@ -35,7 +35,7 @@ public class Files extends YamlConfiguration {
         try {
             load(null, fileName);
         } catch (IOException | InvalidConfigurationException exception) {
-            plugin.getLogger().log(Level.WARNING, "A problem has occurred, the file " + file.getName() + " not create. Notify the developer Gonter", exception);
+            plugin.getLogger().log(Level.WARNING, "A problem has occurred, the file " + file.getName() + " not create. Notify the developer", exception);
         }
     }
 

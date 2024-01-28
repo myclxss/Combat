@@ -92,5 +92,10 @@
           <version>4.7.0</version>
           <scope>provided</scope>
       </dependency>
+      <dependency>
+          <groupId>org.mongodb</groupId>
+          <artifactId>mongo-java-driver</artifactId>
+          <version>3.12.10</version>            <!-- Asegúrate de utilizar la versión más reciente -->
+      </dependency>
   </dependencies>
 </project>

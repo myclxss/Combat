@@ -5,14 +5,12 @@ import com.viaversion.viaversion.api.protocol.version.ProtocolVersion;
 import fr.mrmicky.fastboard.FastBoard;
 import me.clip.placeholderapi.PlaceholderAPI;
 import myclass.plugin.combat.API;
+import myclass.plugin.combat.manager.Database.PlayerDataMap;
 import myclass.plugin.combat.utils.Color;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 public class ScoreboardManager {
 
@@ -30,8 +28,8 @@ public class ScoreboardManager {
         String staticTitle = API.getInstance().getLang().getString("SCOREBOARD.LOADING.TITLE", true);
         List<String> staticLines = Color.set(API.getInstance().getLang().getStringList("SCOREBOARD.LOADING.LINES"));
 
-        board.updateTitle(staticTitle);
-        board.updateLines(staticLines);
+        board.updateTitle(PlaceholderAPI.setPlaceholders(player, staticTitle));
+        board.updateLines(PlaceholderAPI.setPlaceholders(player, staticLines));
 
         boards.put(player.getUniqueId(), board);
     }
@@ -56,7 +54,10 @@ public class ScoreboardManager {
         if (board == null) return;
 
         String arenaTitle = API.getInstance().getLang().getString("SCOREBOARD.ARENA.TITLE", true);
-        List<String> arenaLines = Color.set(API.getInstance().getLang().getStringList("SCOREBOARD.ARENA.LINES"));
+        List<String> arenaLines = new ArrayList<>(Color.set(API.getInstance().getLang().getStringList("SCOREBOARD.ARENA.LINES")));
+
+        String deathCount = String.valueOf(PlayerDataMap.getInstance().getPlayerDataMap().get(player.getUniqueId()).getDeaths());
+        arenaLines.replaceAll(line -> line.replaceAll("%deaths%", deathCount));
 
         board.updateTitle(PlaceholderAPI.setPlaceholders(player, arenaTitle));
         board.updateLines(PlaceholderAPI.setPlaceholders(player, arenaLines));

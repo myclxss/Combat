@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d12afb25-7883-49dc-a1e8-463dde327e96" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/manager/Database/DatabaseConection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/manager/Database/DatabaseMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/manager/Database/PlayerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/manager/Database/PlayerDataMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/Combat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/command/CombatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/command/CombatCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/listener/UserListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/listener/UserListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/manager/Scoreboard/ScoreboardManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/manager/Scoreboard/ScoreboardManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/utils/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myclass/plugin/combat/utils/Files.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lang.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2bTLh1vPOLmh0qXfYaHeYJlXHq6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.Combat [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Combat [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mycla/Documents/workspace/Combat&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d12afb25-7883-49dc-a1e8-463dde327e96" name="Changes" comment="" />
+      <created>1706234239203</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706234239203</updated>
+    </task>
+    <servers />
+  </component>
+</project>
